@@ -76,22 +76,22 @@ export default function Nav() {
                     <Link href='/' className="active font-[500] hover:text-black transition-colors duration-500">Home</Link>
                 </li>
                 <li>
-                    <Link href='/about' className="active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500">About</Link>
+                    <Link href='/about' className="font-[500] text-[#697e8a] hover:text-black transition-colors duration-500">About</Link>
                 </li>
                 <li>
-                    <Link href='/tour' className="active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500">Tour</Link>
+                    <Link href='/tour' className="font-[500] text-[#697e8a] hover:text-black transition-colors duration-500">Tour</Link>
                 </li>
                 <div className="logo text-3xl uppercase font-semibold">
                     <Link href="/" className="unbounded-font">Travel<span className="unbounded-font">Agency</span></Link>
                 </div>
                 <li>
-                    <Link href='/faq' className="active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500">Faq</Link>
+                    <Link href='/faq' className="font-[500] text-[#697e8a] hover:text-black transition-colors duration-500">Faq</Link>
                 </li>
                 <li>
-                    <Link href='/blog' className="active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500">Blog</Link>
+                    <Link href='/blog' className="font-[500] text-[#697e8a] hover:text-black transition-colors duration-500">Blog</Link>
                 </li>
                 <li>
-                    <Link href='/contact' className="active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500">Contact</Link>
+                    <Link href='/contact' className="font-[500] text-[#697e8a] hover:text-black transition-colors duration-500">Contact</Link>
                 </li>
             </ul>
 
