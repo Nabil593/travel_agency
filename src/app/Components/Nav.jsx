@@ -58,13 +58,17 @@ export default function Nav() {
             </div>
         </div>
 
+
+
         {/* Main Nav manu */}
         <div className={`w-full px-[2%] sm:px-[8%] lg:px-[12%] text-start lg:text-center relative flex justify-between lg:justify-center nav-menu-container transition-all duration-500 ease-in-out ${isScrolled ? "bg-white" : "bg-transparent"}`}>
+
 
             {/* Logo for mobile */}
             <div className="lg:hidden flex logo text-2xl uppercase font-semibold">
                 <a href="#" className="unbounded-font">Travel<span className="unbounded-font">Agency</span></a>
             </div>
+
 
             {/* Desktop Menu */}
             <ul className="nav-menu hidden lg:flex w-full  justify-center items-center gap-14 py-5 relative">
@@ -91,12 +95,14 @@ export default function Nav() {
                 </li>
             </ul>
 
+
             {/* Mobile Toggle */}
             <div className="flex justify-center items-center">
                 <div className="toggle btn lg:hidden cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
                     <FontAwesomeIcon icon={isOpen ? faTimes : faBars} className="text-[#193555] text-xl"/>
                 </div>
             </div>
+
 
             {/* Mobile menu dropdown */}
             <ul className={`lg:hidden flex flex-col items-center gap-6 bg-[#f7f7f7] shadow-md absolute left-0 w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-[500px] top-full mt-3 opacity-100 py-6" : "max-h-0 opacity-0 py-0 top-full"}`}>
@@ -111,4 +117,4 @@ export default function Nav() {
         </div>
     </nav>
   )
-}
+};
