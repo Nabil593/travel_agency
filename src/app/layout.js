@@ -1,22 +1,22 @@
-import { Unbounded, Unbounded, Sora } from "next/font/google";
+import { Unbounded, Sora } from "next/font/google";
 import "./globals.css";
 
 //FONT AWSOME CSS
-import "@fortawesome/fontawesome-svg-core/style.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import Nav from "./components/Nav";
+import Nav from "./Components/Nav";
 config.autoAddCss = false;
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
   subsets: ["latin"],
-  weight: [400, 500, 600, 700]
+  weight: ["400", "500", "600", "700"]
 });
 
 const sora = Sora({
   variable: "--font-sora",
   subsets: ["latin"],
-  weight: [400, 500, 600, 700]
+  weight: ["400", "500", "600", "700"]
 });
 
 export const metadata = {
