@@ -4,6 +4,7 @@ import "./globals.css";
 //FONT AWSOME CSS
 import "@fortawesome/fontawesome-svg-core/style.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Nav from "./components/Nav";
 config.autoAddCss = false;
 
 const unbounded = Unbounded({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${sora.variable} ${unbounded.variable} antialiased`}
       >
+        <Nav />
         {children}
       </body>
     </html>
