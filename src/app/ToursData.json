@@ -1,0 +1,28 @@
+[
+    {
+        "id": "1",
+        "title": "phuket",
+        "location": "Thailand",
+        "Price": "$ 40",
+        "Images": "/Images/tour-image-01.webp",
+        "MainImage": "/Images/tour-image-01-1.avif"
+    },
+
+    {
+        "id": "1",
+        "title": "phuket",
+        "location": "Thailand",
+        "Price": "$ 40",
+        "Images": "/Images/tour-image-01.webp",
+        "MainImage": "/Images/tour-image-01-1.avif"
+    },
+
+    {
+        "id": "1",
+        "title": "phuket",
+        "location": "Thailand",
+        "Price": "$ 40",
+        "Images": "/Images/tour-image-01.webp",
+        "MainImage": "/Images/tour-image-01-1.avif"
+    }
+]
