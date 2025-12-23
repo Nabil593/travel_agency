@@ -9,7 +9,16 @@
     },
 
     {
-        "id": "1",
+        "id": "2",
+        "title": "Kelingking",
+        "location": "Indonesia",
+        "Price": "$ 20",
+        "Images": "/Images/tour-image-02.webp",
+        "MainImage": "/Images/tour-image-02-1.jpg"
+    },
+
+    {
+        "id": "3",
         "title": "phuket",
         "location": "Thailand",
         "Price": "$ 40",
@@ -18,7 +27,43 @@
     },
 
     {
-        "id": "1",
+        "id": "4",
+        "title": "phuket",
+        "location": "Thailand",
+        "Price": "$ 40",
+        "Images": "/Images/tour-image-01.webp",
+        "MainImage": "/Images/tour-image-01-1.avif"
+    },
+
+    {
+        "id": "5",
+        "title": "phuket",
+        "location": "Thailand",
+        "Price": "$ 40",
+        "Images": "/Images/tour-image-01.webp",
+        "MainImage": "/Images/tour-image-01-1.avif"
+    },
+
+    {
+        "id": "6",
+        "title": "phuket",
+        "location": "Thailand",
+        "Price": "$ 40",
+        "Images": "/Images/tour-image-01.webp",
+        "MainImage": "/Images/tour-image-01-1.avif"
+    },
+
+    {
+        "id": "7",
+        "title": "phuket",
+        "location": "Thailand",
+        "Price": "$ 40",
+        "Images": "/Images/tour-image-01.webp",
+        "MainImage": "/Images/tour-image-01-1.avif"
+    },
+
+    {
+        "id": "8",
         "title": "phuket",
         "location": "Thailand",
         "Price": "$ 40",
