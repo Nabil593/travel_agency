@@ -19,55 +19,55 @@
 
     {
         "id": "3",
-        "title": "phuket",
-        "location": "Thailand",
-        "Price": "$ 40",
-        "Images": "/Images/tour-image-01.webp",
-        "MainImage": "/Images/tour-image-01-1.avif"
+        "title": "Mt. Bromo",
+        "location": "Inndonesia",
+        "Price": "$ 35",
+        "Images": "/Images/tour-image-03.webp",
+        "MainImage": "/Images/tour-image-03-1.jpeg"
     },
 
     {
         "id": "4",
-        "title": "phuket",
-        "location": "Thailand",
-        "Price": "$ 40",
-        "Images": "/Images/tour-image-01.webp",
-        "MainImage": "/Images/tour-image-01-1.avif"
+        "title": "Old Bagan",
+        "location": "Myanmer",
+        "Price": "$ 18",
+        "Images": "/Images/tour-image-04.webp",
+        "MainImage": "/Images/tour-image-04-1.jpg"
     },
 
     {
         "id": "5",
-        "title": "phuket",
-        "location": "Thailand",
-        "Price": "$ 40",
-        "Images": "/Images/tour-image-01.webp",
-        "MainImage": "/Images/tour-image-01-1.avif"
+        "title": "Ubud",
+        "location": "Indonesia",
+        "Price": "$ 18",
+        "Images": "/Images/tour-image-05.webp",
+        "MainImage": "/Images/tour-image-01-1.jpg"
     },
 
     {
         "id": "6",
-        "title": "phuket",
-        "location": "Thailand",
-        "Price": "$ 40",
-        "Images": "/Images/tour-image-01.webp",
-        "MainImage": "/Images/tour-image-01-1.avif"
+        "title": "Marina Bay",
+        "location": "Singapore",
+        "Price": "$ 24",
+        "Images": "/Images/tour-image-06.webp",
+        "MainImage": "/Images/tour-image-06-1.jpg"
     },
 
     {
         "id": "7",
-        "title": "phuket",
-        "location": "Thailand",
-        "Price": "$ 40",
-        "Images": "/Images/tour-image-01.webp",
-        "MainImage": "/Images/tour-image-01-1.avif"
+        "title": "Mt. Fuji",
+        "location": "Japan",
+        "Price": "$ 48",
+        "Images": "/Images/tour-image-07.webp",
+        "MainImage": "/Images/tour-image-07-1.jpg"
     },
 
     {
         "id": "8",
-        "title": "phuket",
-        "location": "Thailand",
-        "Price": "$ 40",
-        "Images": "/Images/tour-image-01.webp",
-        "MainImage": "/Images/tour-image-01-1.avif"
+        "title": "Padar Island",
+        "location": "Indonesia",
+        "Price": "$ 26",
+        "Images": "/Images/tour-image-08.webp",
+        "MainImage": "/Images/tour-image-01-1.jpeg"
     }
 ]
