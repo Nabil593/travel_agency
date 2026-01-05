@@ -4,8 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
+import toursData from '../ToursData.json';
+import { useState } from "react";
 
 export function Index() {
+
+    const  [selectedTour, setSelectedTour] = useState(null);
+
   return (
     <>
     {/* Hero */}
@@ -22,6 +27,31 @@ export function Index() {
                     View all Tours
                 </a>
             </button>
+        </div>
+    </div>
+
+
+    {/* Tours */}
+    <div className="travel px-[2%] sm:px-[8%] lg:px-[12%] py-[80px] lg:py-[120px] flex flex-col gap-10 lg:gap-14">
+        <div className="travel-content text-center">
+            <h1 className="unbounded-font text-4xl font-semibold pb-3">Find Out The Best Travel Choice in Asia </h1>
+            <p className="w-[60%] mx-auto text-[#193555]">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque.
+            </p>
+        </div>
+        <div className="travel-wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 ">
+            {toursData.map((tour) => (
+                <Link href={`/TourDetails/${tour.id}`} key={tour.id}>
+                    <div className="travel-item rounded-xl overflow-hidden relative group transition-all duration-300">
+                        <Image 
+                        src={tour.Images}
+                        width={400}
+                        height={300}
+                        alt={tour.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+                    </div>
+                </Link>
+            ))}
         </div>
     </div>
     </>
