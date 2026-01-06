@@ -69,8 +69,6 @@ export function Index() {
                             {tour.Price}
                         </h4>
                         </div>
-
-
                     </div>
                 </Link>
             ))}
