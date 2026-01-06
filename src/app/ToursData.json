@@ -41,7 +41,7 @@
         "location": "Indonesia",
         "Price": "$ 18",
         "Images": "/Images/tour-image-05.webp",
-        "MainImage": "/Images/tour-image-01-1.jpg"
+        "MainImage": "/Images/tour-image-05-1.jpg"
     },
 
     {
@@ -68,6 +68,6 @@
         "location": "Indonesia",
         "Price": "$ 26",
         "Images": "/Images/tour-image-08.webp",
-        "MainImage": "/Images/tour-image-01-1.jpeg"
+        "MainImage": "/Images/tour-image-08-1.jpeg"
     }
 ]
