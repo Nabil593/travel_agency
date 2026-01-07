@@ -7,6 +7,20 @@ import Link from "next/link";
 import toursData from '../ToursData.json';
 import { useState } from "react";
 
+import About01 from "../../../public/Images/about-01.webp";
+import About02 from "../../../public/Images/about-02.webp";
+import About03 from "../../../public/Images/about-03.webp";
+import Author01 from "../../../public/Images/author-01.webp";
+import Author02 from "../../../public/Images/author-02.webp";
+import Author03 from "../../../public/Images/author-03.webp";
+import Author04 from "../../../public/Images/author-04.webp";
+
+import BlogPage01 from "../../app/assest/Blog-Page-01.webp";
+import BlogPage02 from "../../app/assest/Blog-Page-02.webp";
+import BlogPage03 from "../../app/assest/Blog-Page-03.webp";
+import CountUp from "../Components/CountUp";
+
+
 export function Index() {
 
     const  [selectedTour, setSelectedTour] = useState(null);
@@ -74,6 +88,110 @@ export function Index() {
             ))}
         </div>
     </div>
+
+    {/* About Section */}
+<div className="about py-[50px] lg:py-[90px] px-[2%] sm:px-[8%] lg:px-[12%]">
+  <div className="flex flex-col lg:flex-row gap-10">
+
+    {/* LEFT CONTENT */}
+    <div className="lg:w-1/2 relative">
+      <div className="about-heading max-w-xl">
+        <h1 className="text-2xl xl:text-4xl font-bold mb-4 leading-snug">
+          Begin Your New Life Experience With Exploring New Destination
+        </h1>
+
+        <p className="mb-4 text-[#7a7a7a] text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis
+          vel repellat dolore beatae nulla ratione laudantium.
+        </p>
+
+        <p className="text-[#7a7a7a] text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, vitae illo
+          corrupti nam possimus distinctio.
+        </p>
+      </div>
+
+      {/* LEFT IMAGE */}
+      {/* <div className="hidden lg:block mt-10">
+        <Image
+          src={About01}
+          alt="About01"
+          className="rounded-r-2xl w-[70%] h-[450px] object-center "
+        />
+      </div> */}
+
+      {/* LEFT VIDEO */}
+<div className="hidden lg:block mt-12 relative w-full">
+  <video
+    src="/video/travel.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="rounded-r-2xl w-full max-w-[420px] h-[420px] object-cover"
+  />
+</div>
+
+    </div>
+
+
+
+    {/* RIGHT CONTENT */}
+    <div className="lg:w-1/2 flex flex-col gap-10">
+
+      {/* CUSTOMER CARD */}
+      <div className="bg-black text-white p-6 rounded-2xl flex flex-col md:flex-row gap-8 items-center">
+        <div className="text-center">
+          <div className="flex -space-x-3">
+            {[Author01, Author02, Author03, Author04].map((img, i) => (
+              <Image
+                key={i}
+                src={img}
+                alt="Author"
+                className="w-12 h-12 rounded-full border-2 border-black"
+              />
+            ))}
+          </div>
+          <CountUp end={1200} duration={2500}/>
+        </div>
+
+        <div>
+          <h3 className="text-xl mb-2">Customer Love The Tour Experiences</h3>
+          <p className="text-[#7a7a7a] text-sm">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+
+      {/* BIG IMAGE */}
+      <Image
+        src={About02}
+        alt="About02"
+        className="rounded-2xl h-[300px] w-full object-cover"
+      />
+
+      {/* IMAGE + CTA */}
+      <div className="flex flex-col sm:flex-row gap-5">
+        <Image
+          src={About03}
+          alt="About03"
+          className="rounded-2xl h-[300px] sm:w-1/2 w-full object-cover"
+        />
+
+        <div className="bg-black text-white p-6 rounded-2xl sm:w-[300px] w-full flex items-center">
+          <div>
+            <h3 className="text-xl mb-3">Join Our Asian Travel Trip</h3>
+            <p className="text-[#7a7a7a] text-sm leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
     </>
   )
 };
