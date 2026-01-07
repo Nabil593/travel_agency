@@ -17,18 +17,19 @@ export default async function Page({ params }) {
     <>
       {/* Banner */}
       <section className="section-banner px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px] min-h-[450px] lg:min-h-[500px] relative">
-        <h2 className="text-4xl text-white text-center unbounded-font">
-          {tour.title}
+
+        <h2 className="absolute flex items-center justify-center inset-0  lg:text-4xl sm:text-3xl text-2xl text-white text-center w-full unbounded-font z-10">
+        {tour.title}
         </h2>
 
-        <ul className="text-white flex items-center gap-6 justify-center mt-4">
+        <ul className="text-white flex items-center gap-6 justify-center section-list z-10">
           <li className="text-sm">
             <Link href="/">Home</Link>
           </li>
           <li className="text-sm relative">
             <FontAwesomeIcon
               icon={faAngleRight}
-              className="absolute -left-4 top-1"
+              className="absolute -left-5 top-1"
             />
             <span>Tour Details</span>
           </li>
