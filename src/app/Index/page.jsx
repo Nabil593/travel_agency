@@ -228,7 +228,7 @@ export function Index() {
 
                 <div className="flex items-center gap-4 pt-4">
                   <img
-                    src={item.image}
+                    src={item.image.src}
                     alt={item.name}
                     className="w-12 h-12 rounded-full object-cover"
                   />
