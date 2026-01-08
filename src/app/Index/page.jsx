@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import toursData from "../ToursData.json";
 import { useState } from "react";
-
+import testimonials from "../testimonials";
 import About01 from "../../../public/Images/about-01.webp";
 import About02 from "../../../public/Images/about-02.webp";
 import About03 from "../../../public/Images/about-03.webp";
@@ -19,6 +19,10 @@ import BlogPage01 from "../../app/assest/Blog-Page-01.webp";
 import BlogPage02 from "../../app/assest/Blog-Page-02.webp";
 import BlogPage03 from "../../app/assest/Blog-Page-03.webp";
 import CountUp from "../Components/CountUp";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 export function Index() {
   const [selectedTour, setSelectedTour] = useState(null);
@@ -179,6 +183,68 @@ export function Index() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Testimonials */}
+      <div className="testimonials bg-[#0e0700] px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px]">
+        {/* Header */}
+        <div className="flex flex-col lg:flex-row justify-between gap-6 pb-10">
+          <h2 className="lg:w-1/2 text-white text-4xl leading-tight unbounded-font">
+            What Our Customers Say About Us?
+          </h2>
+
+          <div className="lg:w-1/2">
+            <p className="text-[#ffffff91] pb-5 text-sm">
+              Real experiences from our happy travelers around the world.
+            </p>
+
+            <button className="bg-white group text-[#193555] hover:bg-[#193555] font-bold px-6 py-4 rounded-full transition-all duration-300">
+              <span className="unbounded-font text-sm uppercase group-hover:text-white tracking-wider">
+                Learn More
+              </span>
+            </button>
+          </div>
+        </div>
+
+        {/* Swiper */}
+        <Swiper
+          spaceBetween={30}
+          loop={true}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          modules={[Pagination, Autoplay]}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 },
+          }}
+        >
+          {testimonials.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="bg-[#1a120a] p-6 rounded-2xl h-full flex flex-col gap-4 border border-[#ffffff14] hover:border-white transition-all duration-300">
+                <p className="text-[#ffffffb3] text-sm leading-relaxed">
+                  “{item.review}”
+                </p>
+
+                <div className="flex items-center gap-4 pt-4">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div>
+                    <h4 className="text-white font-semibold text-sm">
+                      {item.name}
+                    </h4>
+                    <span className="text-[#ffffff91] text-xs">
+                      {item.role}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </>
   );
