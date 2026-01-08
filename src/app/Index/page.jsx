@@ -1,5 +1,4 @@
 "use client";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
@@ -7,6 +6,8 @@ import Link from "next/link";
 import toursData from "../ToursData.json";
 import { useState } from "react";
 import testimonials from "../testimonials";
+import blogs from "../blogData";
+
 import About01 from "../../../public/Images/about-01.webp";
 import About02 from "../../../public/Images/about-02.webp";
 import About03 from "../../../public/Images/about-03.webp";
@@ -15,9 +16,6 @@ import Author02 from "../../../public/Images/author-02.webp";
 import Author03 from "../../../public/Images/author-03.webp";
 import Author04 from "../../../public/Images/author-04.webp";
 
-import BlogPage01 from "../../app/assest/Blog-Page-01.webp";
-import BlogPage02 from "../../app/assest/Blog-Page-02.webp";
-import BlogPage03 from "../../app/assest/Blog-Page-03.webp";
 import CountUp from "../Components/CountUp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -245,6 +243,53 @@ export function Index() {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+
+      {/* Blog */}
+      <div className="bg-[#0e0700] px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px]">
+        {/* Section Header */}
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-6 pb-12">
+          <h2 className="text-white text-4xl unbounded-font">
+            Latest Travel Blogs
+          </h2>
+
+          <p className="text-[#ffffff91] max-w-xl text-sm">
+            Read our latest travel stories, guides, and tips from around the
+            world.
+          </p>
+        </div>
+
+        {/* Blog Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogs.map((blog) => (
+            <div
+              key={blog.id}
+              className="bg-[#1a120a] rounded-2xl overflow-hidden border border-[#ffffff14] hover:border-white transition-all duration-300"
+            >
+              <img
+                src={blog.image.src}
+                alt={blog.title}
+                className="w-full h-56 object-cover"
+              />
+              <div className="p-6">
+                <span className="text-xs text-[#ffffff91]">{blog.date}</span>
+
+                <h3 className="text-white text-lg font-semibold mt-2 mb-3">
+                  {blog.title}
+                </h3>
+
+                <p className="text-[#ffffffb3] text-sm mb-4">{blog.excerpt}</p>
+
+                <a
+                  href="#"
+                  className="text-white text-sm font-semibold underline hover:text-[#f5c16c] transition"
+                >
+                  Read More →
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
