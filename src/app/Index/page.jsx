@@ -21,6 +21,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import FAQ from "../Faq/page";
 
 export function Index() {
   const [selectedTour, setSelectedTour] = useState(null);
@@ -291,6 +292,10 @@ export function Index() {
           ))}
         </div>
       </div>
+
+      {/* FAQ */}
+      <FAQ />
+
     </>
   );
 }
